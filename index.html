@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="search">
+        <div class="search-box">
+          <input type="text" placeholder="Write movie name" class="search-input">
+          <button type="button"  class="search-input-btn" onclick="remove()"></button>
+          <div class="err">По вашому запиту нічого не знайдено</div>
+        </div>
+        <button type="button" class="search-btn">search</button>
+      </div>
+      <div class="films">
+        <article class="films-box">
+          <div class="films-box-img"></div>
+          <h2 class="films-box-title">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          </h2>
+          <p class="films-box-year"><span>Lorem ipsum dolor sit amet.</span></p>
+          <button type="button" class="films-box-btn">More details</button>
+        </article>
+      </div>
+      <div class="allFilmInfo">
+        <div class="allFilmInfo-conteiner">
+          <div class="allFilmInfo-conteiner-img"></div>
+          <div class="allFilmInfo-conteiner-text">
+            <h2 class="allFilmInfo-conteiner-text-title"></h2>
+            <p class="allFilmInfo-conteiner-text-main"></p>
+            <p><span class="writer bold-text">Written by:</span><span></span></p>
+            <p><span class="bold-text">Directed by:</span><span></span></p>
+            <p><span class="bold-text">Starring:</span><span></span></p>
+            <p><span class="bold-text">BoxOffice:</span><span></span></p>
+            <p><span class="bold-text">Awards:</span><span></span></p>
+            <p><span class="bold-text">Ratings:</span><span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
