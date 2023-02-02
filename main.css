@@ -74,14 +74,14 @@
 .films {
   width: 90%;
   height: auto;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  opacity: 0.2;
 }
 .films-box {
-  display: none;
   width: 250px;
   min-height: 400px;
   box-shadow: 0 0 12px gray;
@@ -90,12 +90,12 @@
   flex-direction: column;
 }
 .films-box-img {
-  background: url(./img/Screenshot_2.png);
   width: 100%;
   height: 60%;
   background-size: cover;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+  background-color: #a6b7c8;
 }
 .films-box-title {
   width: 100%;

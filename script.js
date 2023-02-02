@@ -34,6 +34,7 @@ searchBtn.addEventListener("click", getData);
 function createCard(arr) {
   if (arr){
     films.innerHTML = '';
+    films.style.opacity = 1;    
   }
   for (const elem of arr) {
     let clon = filmsBox.cloneNode(true);
@@ -42,6 +43,7 @@ function createCard(arr) {
     clon.firstElementChild.style.background = `url(${elem.Poster})`;
     clon.firstElementChild.nextElementSibling.innerHTML = `${elem.Title}`;
     clon.firstElementChild.nextElementSibling.nextElementSibling.innerHTML = `${elem.Type} <br> ${elem.Year}`;
+    clon.children[3].textContent = 'More details';
   }
   films.style.display = "flex";
 }
